@@ -1,7 +1,8 @@
 <?php
+
 class psckttransparenteController extends controller {
 
-	private $user;
+    private $user;
 
     public function __construct() {
         parent::__construct();
@@ -12,9 +13,17 @@ class psckttransparenteController extends controller {
         $products = new Products();
 
         $dados = $store->getTemplateData();
+        try {
+            $sessionCode = \PagSeguro\Services\Session::create(
+                            \PagSeguro\Configuration\Configure::getAccountCredentials()
+            );
+            $dados['sessionCode'] = $sessionCode->getResult();
+        } catch (Exception $e) {
+            echo "ERRO: " . $e->getMessage();
+            exit;
+        }
 
         $this->loadTemplate('cart_psckttransparente', $dados);
     }
-
 
 }
