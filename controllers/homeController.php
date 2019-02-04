@@ -41,7 +41,6 @@ class homeController extends controller {
         $dados['searchTerm'] = '';
         $dados['category'] = '';
 
-        $dados['sidebar'] = true;
 
         $this->loadTemplate('home', $dados);
     }

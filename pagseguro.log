@@ -83,3 +83,12 @@
 22/01/2019 21:41:40 PagSeguro.Session[info]: Begin
 22/01/2019 21:41:40 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
 22/01/2019 21:41:41 PagSeguro.Session[info]: Session ID: a2d7b6d630244e708881d19c3006abfd
+04/02/2019 14:20:44 PagSeguro.Session[info]: Begin
+04/02/2019 14:20:44 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+04/02/2019 14:20:47 PagSeguro.Session[info]: Session ID: 5ef381b6fade44a09c50f978c03125f7
+04/02/2019 14:38:14 PagSeguro.Session[info]: Begin
+04/02/2019 14:38:14 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+04/02/2019 14:38:16 PagSeguro.Session[info]: Session ID: b58bf9ba912e41cdae4b040420fd3b85
+04/02/2019 14:53:28 PagSeguro.Session[info]: Begin
+04/02/2019 14:53:28 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+04/02/2019 14:53:30 PagSeguro.Session[info]: Session ID: c4cbeaaa2dca4461a9306661f1cdd4ae

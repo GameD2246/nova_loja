@@ -27,6 +27,7 @@ class productController extends controller {
             $dados['product_images'] = $products->getImagesByProductId($id);
             $dados['product_options'] = $products->getOptionsByProductId($id);
             $dados['product_rates'] = $products->getRates($id, 5);
+            
 
             $this->loadTemplate('product', $dados);
         } else {
