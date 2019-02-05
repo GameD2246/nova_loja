@@ -92,3 +92,12 @@
 04/02/2019 14:53:28 PagSeguro.Session[info]: Begin
 04/02/2019 14:53:28 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
 04/02/2019 14:53:30 PagSeguro.Session[info]: Session ID: c4cbeaaa2dca4461a9306661f1cdd4ae
+06/02/2019 00:09:59 PagSeguro.Session[info]: Begin
+06/02/2019 00:09:59 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+06/02/2019 00:09:59 PagSeguro.Session[error]: CURL can't connect: Could not resolve host: ws.sandbox.pagseguro.uol.com.br
+06/02/2019 00:10:20 PagSeguro.Session[info]: Begin
+06/02/2019 00:10:20 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+06/02/2019 00:10:20 PagSeguro.Session[error]: CURL can't connect: Could not resolve host: ws.sandbox.pagseguro.uol.com.br
+06/02/2019 00:12:41 PagSeguro.Session[info]: Begin
+06/02/2019 00:12:41 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+06/02/2019 00:12:45 PagSeguro.Session[info]: Session ID: b361394f6d0c46ed90cda4e56a8ca285
