@@ -44,26 +44,6 @@
                         <div class="search_area">
                             <form action="<?php echo BASE_URL; ?>busca" method="GET">
                                 <input type="text" name="s" value="<?php echo (!empty($viewData['searchTerm'])) ? $viewData['searchTerm'] : ''; ?>" required placeholder="<?php $this->lang->get('SEARCHFORANITEM'); ?>" />
-                                <select name="category">
-
-                                    <option value=""><?php $this->lang->get('ALLCATEGORIES'); ?></option>
-
-                                    <?php foreach ($viewData['categories'] as $cat): ?>
-                                        <option <?php echo ($viewData['category'] == $cat['id']) ? 'selected="selected"' : ''; ?> value="<?php echo $cat['id']; ?>"><?php echo $cat['name']; ?></option>
-                                        <?php
-                                        if (count($cat['subs']) > 0) {
-                                            $this->loadView('search_subcategory', array(
-                                                'subs' => $cat['subs'],
-                                                'level' => 1,
-                                                'category' => $viewData['category']
-                                            ));
-                                        }
-                                        ?>
-                                    <?php endforeach; ?>
-
-
-
-                                </select>
                                 <input type="submit" value="" />
                             </form>
                         </div>
@@ -74,10 +54,10 @@
                                 <div class="carticon">
                                     <div class="cartqt"><?php echo $viewData['cart_qt']; ?></div>
                                 </div>
-                                <div class="carttotal">
+<!--                                <div class="carttotal">
                                     <?php $this->lang->get('CART'); ?>:<br/>
                                     <span>R$ <?php echo number_format($viewData['cart_subtotal'], 2, ',', '.'); ?></span>
-                                </div>
+                                </div>-->
                             </div>
                         </a>
                     </div>

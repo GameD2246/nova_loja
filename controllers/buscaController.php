@@ -17,7 +17,6 @@ class buscaController extends controller {
 
         if(!empty($_GET['s'])) {
             $searchTerm = $_GET['s'];
-            $category = $_GET['category'];
 
             $filters = array();
             if(!empty($_GET['filter']) && is_array($_GET['filter'])) {
@@ -25,7 +24,6 @@ class buscaController extends controller {
             }
 
             $filters['searchTerm'] = $searchTerm;
-            $filters['category'] = $category;
 
             $currentPage = 1;
             $offset = 0;
@@ -41,12 +39,11 @@ class buscaController extends controller {
             $dados['totalItems'] = $products->getTotal($filters);
             $dados['numberOfPages'] = ceil($dados['totalItems'] / $limit);
             $dados['currentPage'] = $currentPage;
-
+            
             $dados['filters'] = $f->getFilters($filters);
             $dados['filters_selected'] = $filters;
 
             $dados['searchTerm'] = $searchTerm;
-            $dados['category'] = $category;
 
             $dados['sidebar'] = true;
 

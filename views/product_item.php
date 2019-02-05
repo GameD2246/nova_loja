@@ -13,13 +13,7 @@
         </div>
         <div id="conteudo" class="product_image">
             <img src="<?php echo BASE_URL; ?>media/products/<?php echo $images[0]['url']; ?>" width="100%" />
-            <div class="product_levar">
-                
-                <h3>
-                    <img src="<?php echo BASE_URL; ?>assets/images/search.png" class="product_search"/>
-                    Vou levar
-                </h3>
-            </div>
+            
         </div>
 
         <div class="product_name"><?php echo $name; ?></div>
