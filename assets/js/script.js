@@ -47,6 +47,11 @@ $(function(){
 		var url = $(this).find('img').attr('src');
 		$('.mainphoto').find('img').attr('src', url);
 	});
+        $("div.conteudo > img").hover(function(){
+           $(this).next(".product_levar").show();
+       }, function (){
+           $(this).next(".product_levar").hide();
+        });
 
 
 

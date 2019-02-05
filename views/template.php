@@ -257,5 +257,6 @@
         <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/tooltip.js"></script>
     </body>
 </html>
