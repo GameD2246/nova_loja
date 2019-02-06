@@ -79,7 +79,10 @@
 <!--        <select name="payment_type">
             <option value="checkout_transparente">Pagseguro</option>
         </select>-->
-        <input type="radio" name="payment_type" value="checkout_transparente">Pagseguro 
+        <input type="radio" name="payment_type" value="checkout_transparente" id="pagseguro"><label for="pagseguro">Pagseguro</label>
+        <br>
+        <input type="radio" name="payment_type" value="checkout_transparente" id="mercadopaco"><label for="mercadopaco">MercadoPago</label>
+        <br><br>
         <input type="submit" value="Finalizar Compra" class="button" />
     </form>
 
