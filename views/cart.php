@@ -37,27 +37,40 @@
     <tr>
     </tr>
     <tr>
-        <td colspan="6" align="right"></td>
+        <td class="frt_form" colspan="5" rowspan="3" align="left">
+            <div>
+                Calcule o <strong>frete:</strong>
+            </div>
+
+            <form  method="POST" >
+                <?php
+                $cep = (!empty($_POST['cep'])) ? $_POST['cep'] : '';
+                ?>
+                <input type="text" name="cep" value="<?php echo $cep; ?>" />
+                <input type="submit" value="Calcular" />
+            </form>
+
+        </td>
+        <td colspan="1" rowspan="3" align="left" ></td>
         <td class="name_a_cart" colspan="" align="center">Sub-total:</td>
         <td class="valor_cart" align="left"><strong>R$ <?php echo number_format($subtotal, 2, ',', '.'); ?></strong></td>
     </tr>
     <tr>
-        <td colspan="6" align="right"></td>
-        <td class="valor_cart" align="center">Frete:</td>
-        <td class="name_a_cart"align="left">
-            <?php if (isset($shipping['price'])): ?>
-                <strong>R$ <?php echo $shipping['price']; ?></strong> (<?php echo $shipping['date']; ?> dia<?php echo ($shipping['date'] == '1') ? '' : 's'; ?>)
-            <?php else: ?>
-                Qual seu CEP?<br/>
-                <form method="POST">
-                    <input type="number" name="cep" /><br/>
-                    <input type="submit" value="Calcular" />
-                </form>
-            <?php endif; ?>	
+
+        <td class="tm_cart frt_frt" colspan="2" frt_frt">
+
+            <input type="radio" name="" style="text-align: right" value="" id="frt_">
+            <label  for="frt_"><strong><?php echo $shipping['date']; ?>
+                    dia<?php echo ($shipping['date'] == '1') ? '' : 's'; ?></strong>
+                <?php if (isset($shipping['price'])): ?>
+                    R$ <?php echo $shipping['price']; ?> 
+                <?php endif; ?></label>
+            <br>
+
+
         </td>
     </tr>
     <tr>
-        <td colspan="6" align="right"></td>
         <td class="name_a_cart" align="center">Total:</td>
         <td class="valor_cart" align="left"><strong>R$ <?php
                 if (isset($shipping['price'])) {
@@ -76,7 +89,7 @@
 <?php if ($frete > 0): ?>
 
     <form method="POST" action="<?php echo BASE_URL; ?>cart/payment_redirect" style="float:right">
-<!--        <select name="payment_type">
+    <!--        <select name="payment_type">
             <option value="checkout_transparente">Pagseguro</option>
         </select>-->
         <input type="radio" name="payment_type" value="checkout_transparente" id="pagseguro"><label for="pagseguro">Pagseguro</label>

@@ -52,6 +52,9 @@ $(function(){
        }, function (){
            $(this).next(".product_levar").hide();
         });
+        
+        
+        $()
 
 
 

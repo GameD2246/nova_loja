@@ -110,3 +110,6 @@
 06/02/2019 02:58:57 PagSeguro.Session[info]: Begin
 06/02/2019 02:58:57 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
 06/02/2019 02:58:58 PagSeguro.Session[info]: Session ID: f6f5823965a643d28b89f3e81fab0731
+07/02/2019 17:54:12 PagSeguro.Session[info]: Begin
+07/02/2019 17:54:13 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=yago-felix%40hotmail.com&token=8FCFCA010D764C77BFFE910C45E33529
+07/02/2019 17:54:17 PagSeguro.Session[info]: Session ID: 7dc1bb0d76074f8286f54089fc82a3c0

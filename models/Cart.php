@@ -88,7 +88,9 @@ class Cart extends model {
 		}
 
 		$data = array(
-			'nCdServico' => '40010',
+                    // Sedex: 40010
+                    // Pac: 41106
+			'nCdServico' => '41106',
 			'sCepOrigem' => $config['cep_origin'],
 			'sCepDestino' => $cepDestination,
 			'nVlPeso' => $nVlPeso,

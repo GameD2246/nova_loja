@@ -11,7 +11,7 @@ class cartController extends controller {
         $store = new Store();
         $products = new Products();
         $cart = new Cart();
-        $cep = '';
+        $cep = array();
         $shipping = array();
 
         if(!empty($_POST['cep'])) {
@@ -24,7 +24,7 @@ class cartController extends controller {
         if(!empty($_SESSION['shipping'])) {
             $shipping = $_SESSION['shipping'];
         }
-
+        
         if(!isset($_SESSION['cart']) || (isset($_SESSION['cart']) && count($_SESSION['cart']) == 0)) {
             header("Location: ".BASE_URL);
             exit;
